@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10CAB4E1BA88E2900FF6357 /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = B10CAB4D1BA88E2900FF6357 /* Animals.json */; };
 		B10E13D71BA7771E004A6429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13D61BA7771E004A6429 /* AppDelegate.swift */; };
 		B10E13D91BA7771E004A6429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13D81BA7771E004A6429 /* ViewController.swift */; };
 		B10E13DC1BA7771E004A6429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E13DA1BA7771E004A6429 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10CAB4D1BA88E2900FF6357 /* Animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
 		B10E13D31BA7771E004A6429 /* ImaginaryAnimalsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginaryAnimalsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10E13D61BA7771E004A6429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B10E13D81BA7771E004A6429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				B10E13F81BA78099004A6429 /* ImaginaryAnimal.swift */,
 				B10E13FA1BA7887C004A6429 /* AnimalsLoader.swift */,
 				B10E13FC1BA78B9F004A6429 /* DetailViewController.swift */,
+				B10CAB4D1BA88E2900FF6357 /* Animals.json */,
 			);
 			path = ImaginaryAnimalsLister;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10E13E11BA7771E004A6429 /* LaunchScreen.storyboard in Resources */,
+				B10CAB4E1BA88E2900FF6357 /* Animals.json in Resources */,
 				B10E13DE1BA7771E004A6429 /* Assets.xcassets in Resources */,
 				B10E13DC1BA7771E004A6429 /* Main.storyboard in Resources */,
 			);
@@ -401,6 +405,7 @@
 				B10E13F21BA7771E004A6429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B10E13F31BA7771E004A6429 /* Build configuration list for PBXNativeTarget "ImaginaryAnimalsListerTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				B10E13F51BA7771E004A6429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
