@@ -13,32 +13,25 @@ struct AnimalsLoader {
     
     func loadAnimals() ->[ImaginaryAnimal] {
         
-        let oscar = ImaginaryAnimal(name:"Oscar",
-            height: "1.5",
-            location: "Trashcan",
-            dateLastSeen: "1992",
-            imageURL:NSURL(string:"https://upload.wikimedia.org/wikipedia/en/7/7e/AEOrangeOscar.jpg"))
+        var animalsArray = [ImaginaryAnimal]()
         
-        let kermit = ImaginaryAnimal(name:"Kermit the Frog",
-            height: "1.5",
-            location: "Swamp",
-            dateLastSeen: "2014",
-            imageURL:NSURL(string:"https://upload.wikimedia.org/wikipedia/en/6/62/Kermit_the_Frog.jpg"))
-        
-        let theCount = ImaginaryAnimal(name:"The Count",
-            height: "3.5",
-            location: "Sesame Steet",
-            dateLastSeen: "1995",
-            imageURL:NSURL(string:"https://upload.wikimedia.org/wikipedia/en/2/29/Count_von_Count_kneeling.png"))
-        
-        let bigBird = ImaginaryAnimal(name:"Big Bird",
-            height: "6.5",
-            location: "Sesame Steet",
-            dateLastSeen: "2013",
-            imageURL:NSURL(string:"https://upload.wikimedia.org/wikipedia/commons/7/73/KUHT_Big_Bird.jpg"))
-        
-       return [oscar, kermit, theCount, bigBird]
-        
+        guard let url = NSBundle.mainBundle().URLForResource("Animals", withExtension: "json"),
+            let data = NSData(contentsOfURL: url),
+            //for productionj app, we would want to catch this error
+            let jsonArray = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] else{
+                //fatalError("Coun't load or parse file")
+                print("there was a problem loading the json file")
+                return animalsArray
+        }
+        if let jsonArray:[AnyObject] = jsonArray {
+            for animalJson in jsonArray {
+                if let animal = ImaginaryAnimal(fromJSON: animalJson)
+                {
+                    animalsArray.append(animal)
+                }
+            }
+        }
+        return animalsArray
     }
     
 }

@@ -4,7 +4,7 @@
   "height": "1.5",
   "location": "Trashcan",
   "dateLastSeen": "1992",
-  "imageURLString": "https://upload.wikimedia.org/wikipedia/en/7/7e/AEOrangeOscar.jpg"},
+  "imageURL": "https://upload.wikimedia.org/wikipedia/en/7/7e/AEOrangeOscar.jpg"},
   
   {
   "name": "Kermit the Frog",
@@ -17,7 +17,7 @@
   "name":"The Count",
   "height": "3.5",
   "location": "Sesame Street",
-  "dateLastSeen": "1995"
+  "dateLastSeen": "1995",
   "imageURL": "https://upload.wikimedia.org/wikipedia/en/2/29/Count_von_Count_kneeling.png"
   },
   
