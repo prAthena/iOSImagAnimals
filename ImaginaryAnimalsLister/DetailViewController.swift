@@ -30,13 +30,17 @@ class DetailViewController: UIViewController {
             dateLastSeenLabel.text = myAnimal.dateLastSeen
             
         }
+
+        
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         if let url = animal?.imageURL,
             let imageData = NSData(contentsOfURL: url) {
                 self.speciesImageView.image = UIImage(data: imageData)
         }
-        
-
-        // Do any additional setup after loading the view.
     }
     
 
