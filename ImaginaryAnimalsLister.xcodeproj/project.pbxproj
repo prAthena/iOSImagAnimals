@@ -13,6 +13,10 @@
 		B10E13DE1BA7771E004A6429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10E13DD1BA7771E004A6429 /* Assets.xcassets */; };
 		B10E13E11BA7771E004A6429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E13DF1BA7771E004A6429 /* LaunchScreen.storyboard */; };
 		B10E13EC1BA7771E004A6429 /* ImaginaryAnimalsListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13EB1BA7771E004A6429 /* ImaginaryAnimalsListerTests.swift */; };
+		B10E13F71BA779A1004A6429 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13F61BA779A1004A6429 /* TableViewController.swift */; };
+		B10E13F91BA78099004A6429 /* ImaginaryAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13F81BA78099004A6429 /* ImaginaryAnimal.swift */; };
+		B10E13FB1BA7887C004A6429 /* AnimalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13FA1BA7887C004A6429 /* AnimalsLoader.swift */; };
+		B10E13FD1BA78B9F004A6429 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E13FC1BA78B9F004A6429 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		B10E13E71BA7771E004A6429 /* ImaginaryAnimalsListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginaryAnimalsListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10E13EB1BA7771E004A6429 /* ImaginaryAnimalsListerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimalsListerTests.swift; sourceTree = "<group>"; };
 		B10E13ED1BA7771E004A6429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10E13F61BA779A1004A6429 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B10E13F81BA78099004A6429 /* ImaginaryAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimal.swift; sourceTree = "<group>"; };
+		B10E13FA1BA7887C004A6429 /* AnimalsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsLoader.swift; sourceTree = "<group>"; };
+		B10E13FC1BA78B9F004A6429 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				B10E13D61BA7771E004A6429 /* AppDelegate.swift */,
+				B10E13F61BA779A1004A6429 /* TableViewController.swift */,
 				B10E13D81BA7771E004A6429 /* ViewController.swift */,
 				B10E13DA1BA7771E004A6429 /* Main.storyboard */,
 				B10E13DD1BA7771E004A6429 /* Assets.xcassets */,
 				B10E13DF1BA7771E004A6429 /* LaunchScreen.storyboard */,
 				B10E13E21BA7771E004A6429 /* Info.plist */,
+				B10E13F81BA78099004A6429 /* ImaginaryAnimal.swift */,
+				B10E13FA1BA7887C004A6429 /* AnimalsLoader.swift */,
+				B10E13FC1BA78B9F004A6429 /* DetailViewController.swift */,
 			);
 			path = ImaginaryAnimalsLister;
 			sourceTree = "<group>";
@@ -196,8 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10E13FB1BA7887C004A6429 /* AnimalsLoader.swift in Sources */,
 				B10E13D91BA7771E004A6429 /* ViewController.swift in Sources */,
+				B10E13F71BA779A1004A6429 /* TableViewController.swift in Sources */,
+				B10E13FD1BA78B9F004A6429 /* DetailViewController.swift in Sources */,
 				B10E13D71BA7771E004A6429 /* AppDelegate.swift in Sources */,
+				B10E13F91BA78099004A6429 /* ImaginaryAnimal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
